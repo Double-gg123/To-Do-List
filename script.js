@@ -43,4 +43,12 @@ function addTask(){
     
   }
 
-} 
+
+ const li = document.createElement("li");
+li.textContent = addtable;
+
+li.addEventListener("click", () => 
+li.classList.toggle("completed"));
+document.getElementById("taskList").appendChild(li);
+input.value = "";
+}
