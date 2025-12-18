@@ -1,0 +1,112 @@
+.todo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f1f2f6;
+  padding: 20px;
+}
+
+.todo-card {
+  background: white;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.todo-header h2 { color: #2d3436; margin-bottom: 5px; }
+.todo-header p { color: #636e72; font-size: 14px; }
+
+.pretty-input-group { display: flex; gap: 10px; margin: 30px 0; }
+
+.pretty-input-group input {
+  flex: 1;
+  padding: 12px 20px;
+  border: 2px solid #eee;
+  border-radius: 15px;
+  background-color: #f8f9fa;
+  color: #2d3436;
+  outline: none;
+}
+
+.pretty-add-btn {
+  background-color: #ff7e7e;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Timeline Markers */
+.timeline-block { display: flex; gap: 15px; }
+.timeline-marker { display: flex; flex-direction: column; align-items: center; }
+
+.marker-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ff7e7e;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+/* Faded dot for completed tasks */
+.marker-dot.completed-dot {
+  background-color: #d1d8e0;
+}
+
+.marker-line { width: 2px; background-color: #eee; flex-grow: 1; }
+
+/* Task Card & Text */
+.timeline-content-card {
+  flex: 1;
+  background: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #f1f2f6;
+}
+
+.task-name {
+  color: #2d3436;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+/* THE STRIKE-THROUGH EFFECT */
+.task-name.completed-text {
+  text-decoration: line-through;
+  color: #a4b0be;
+  opacity: 0.7;
+}
+
+.pretty-delete-btn { background: none; border: none; color: #ccc; cursor: pointer; font-size: 18px; }
+.pretty-delete-btn:hover { color: #ff7e7e; }
+
+.empty-msg { text-align: center; color: #b2bec3; padding: 20px; }
+
+.logout-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f2f6;
+  display: flex;
+  justify-content: center;
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid #ff7e7e;
+  color: #ff7e7e;
+  padding: 8px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}

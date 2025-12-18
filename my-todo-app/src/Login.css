@@ -1,0 +1,145 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-card {
+  display: flex;
+  width: 850px;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section Styles */
+.login-left {
+  flex: 1;
+  padding: 60px;
+}
+
+.login-left h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group .icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 45px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff7e7e; /* Pink/Red color from your image */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #ff5e5e;
+}
+
+/* Right Section Styles */
+.login-right {
+  flex: 1;
+  background-color: #f7f9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.illustration-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.social-divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #aaa;
+  position: relative;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  display: flex;         /* Centers the image */
+  align-items: center;    /* Centers the image */
+  justify-content: center; /* Centers the image */
+  padding: 0;
+  transition: transform 0.2s;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+  background-color: #f8f9fa;
+}
+
+/* Style for the actual image inside the button */
+.btn-icon {
+  width: 24px;  /* Adjust size as needed */
+  height: 24px;
+  object-fit: contain;
+}
+input {
+  color: #333 !important;      /* Dark text */
+  background-color: #fff !important; /* White background */
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #ff7e7e; /* Matches your theme */
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Ensure visibility for typed text */
+input {
+  color: #333 !important;
+  background-color: #fff !important;
+}
